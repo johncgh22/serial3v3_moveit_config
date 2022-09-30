@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: serial3_robot_v3
+    relative_path: urdf/serial3_robot_v3.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/serial3_robot_v3.srdf
+  CONFIG:
+    author_name: johncgh22
+    author_email: memorexduo@gmail.com
+    generated_timestamp: 1664568398

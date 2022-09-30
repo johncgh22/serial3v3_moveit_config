@@ -1,0 +1,10 @@
+controller_list:
+  - name: fake_serial3v3_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - base_to_e1_joint
+      - e1_to_e2_joint
+      - e2_to_e3_joint
+initial:  # Define initial robot poses per group
+  - group: serial3v3
+    pose: home
