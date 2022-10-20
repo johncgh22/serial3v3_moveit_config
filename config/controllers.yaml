@@ -1,5 +1,0 @@
-controller_list:
-- name: serial3v3_controller
-  action_ns: "follow_joint_trajectory"
-  type: FollowJointTrajectory
-  joints: [base_to_e1_joint, e1_to_e2_joint, e2_to_e3_joint]
