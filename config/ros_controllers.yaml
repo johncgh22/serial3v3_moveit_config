@@ -1,22 +1,23 @@
-serial3v3_controller:
-  type: effort_controllers/JointTrajectoryController
-  joints:
-    - base_to_e1_joint
-    - e1_to_e2_joint
-    - e2_to_e3_joint
-  gains:
-    base_to_e1_joint:
-      p: 100.0
-      d: 0.01
-      i: 10.0
-      i_clamp: 1
-    e1_to_e2_joint:
-      p: 100.0
-      d: 0.01
-      i: 10.0
-      i_clamp: 1
-    e2_to_e3_joint:
-      p: 100.0
-      d: 0.01
-      i: 10.0
-      i_clamp: 1
+serial3v3:
+  serial3v3_controller:
+    type: effort_controllers/JointTrajectoryController
+    joints:
+      - base_to_e1_joint
+      - e1_to_e2_joint
+      - e2_to_e3_joint
+    gains:
+      base_to_e1_joint:
+        p: 1.0
+        d: 0.01
+        i: 0.01
+        i_clamp: 1
+      e1_to_e2_joint:
+        p: 100.0
+        d: 0.01
+        i: 0.01
+        i_clamp: 1
+      e2_to_e3_joint:
+        p: 1.0
+        d: 0.01
+        i: 0.01
+        i_clamp: 1
