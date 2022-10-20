@@ -8,7 +8,7 @@
 
     <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
         <param name="/use_gui" value="false" />
-        <rosparam param="/source_list">[serial3v3_controller/state]</rosparam>
+        <rosparam param="/source_list">[/joint_states]</rosparam>
     </node>
 
     <include file="$(find serial3v3_moveit_config)/launch/move_group.launch">    
@@ -18,6 +18,5 @@
     <include file="$(find serial3v3_moveit_config)/launch/moveit_rviz.launch">    
         <arg name="rviz_config" value="true" />
     </include>        
-
 
 </launch>
